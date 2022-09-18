@@ -46,8 +46,8 @@
     margin-right:160px;
 }
 .text2{
-    width:140px;
-    height:30px;
+    width:180px;
+    height:15px;
     font-size: 23px;
     text-align: left;
     grid-column-start: 1 ;
@@ -56,31 +56,34 @@
     grid-row-end: 3;
 }
 #doctors {
-    width:600px;
+    width:900px;
     height:30px;
     display:grid;
     grid-template-columns: 20% 20% 20% 20% 20% ;
     grid-template-rows: 50% 50%;
     font-size:20px;
     color:grey;
-    grid-column-start: 3 ;
-    grid-column-end: 8;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-column-start: 4 ;
+    grid-column-end: 12;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 #doctors1 {
     grid-row: 1;
     grid-column-start: 1;
-    grid-column-end: 5;
-    font-size: larger;
+    grid-column-end: 10;
+    font-size: x-large;
     font-family: Work Sans,Arial,sans-serif;
+    row-gap: 10px;
 }
 #doctors2{
-    grid-row: 2;
+    grid-row: 4;
     grid-column-start: 1;
-    grid-column-end: 5 ;
-    font-size: larger;
-
+    grid-column-end: 10 ;
+    font-size:x-large;
+    row-gap: 10px;
 }
 
 .medical {
@@ -229,3 +232,44 @@
 .department{
     position:relative;
 }
+.fifth {
+    background-color:rgb(176, 252, 227);
+    width:100%;
+    height:800px;
+    margin-top: 120px;
+    margin-bottom: 15px;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+.annonce {
+    width:180px;
+    height:10px;
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    grid-row: 1/4;
+    grid-column:2/15;
+}
+.title1{
+    font-size: xx-large;
+}
+.annonce1 {
+    width:200px;
+    height:200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: beige;
+    padding-left:6px;
+    padding-right:6px;
+    padding-top: 15px;
+}
+.annonce11{
+    grid-column:12/17;
+    grid-row:1.5;
+}
+
