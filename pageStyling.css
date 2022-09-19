@@ -22,7 +22,6 @@
     margin-right: 100px;
     width:500px;
     gap:10px;
-    text-decoration: none;
 }
 .first {
     display:flex;
@@ -65,7 +64,6 @@
     grid-template-columns: 20% 20% 20% 20% 20% ;
     grid-template-rows: 50% 50%;
     font-size:20px;
-    text-decoration: none;
     color:grey;
     row-gap: 5px;
     column-gap: 5px;
@@ -81,7 +79,6 @@
     font-size: x-large;
     font-family: Work Sans,Arial,sans-serif;
     row-gap: 10px;
-    text-decoration: none;
 }
 #doctors2{
     grid-row: 4;
@@ -89,7 +86,6 @@
     grid-column-end: 10 ;
     font-size:x-large;
     row-gap: 10px;
-    text-decoration: none;
 }
 
 .medical {
@@ -129,8 +125,8 @@
     padding-top: 20px;
     padding-right: 50px;
     padding-bottom: 35px;
-    width:230px;
-    height:300px;
+    width:300px;
+    height:430px;
     text-decoration: none;
     border-radius: 5%;
     margin-bottom:30px;
@@ -184,8 +180,8 @@
     padding-right: 50px;
     padding-bottom: 35px;
     text-decoration: none;
-    width:230px;
-    height:300px;
+    width:300px;
+    height:430px;
     border-radius: 5%;
     margin-bottom:30px;
     margin-top:85px;
@@ -204,8 +200,8 @@
     padding-right: 50px;
     padding-bottom: 37px;
     text-decoration: none;
-    width:230px;
-    height:300px;
+    width:300px;
+    height:430px;
     border-radius: 5%;
     margin-bottom:30px;
     margin-top:85px;
@@ -218,9 +214,6 @@
 .article3:hover {
     background-color: #464747;
 }
-.elmli{
-    text-decoration: none;
-}
 .career:hover{
     color:#00b39b;
     text-decoration: none;
@@ -230,7 +223,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items:stretch;
-    text-decoration: none;
     text-align:left;
     margin-top: 50px;
     margin-left: 0px;
@@ -238,11 +230,12 @@
     padding:top=5px,bottom=5px,left=5px,right=15px;
     border-color:rgb(252, 253, 253);
     border-style: double;
+    text-decoration: none;
     background-color: #fcfdfd;
     font-family:Work Sans,Arial,sans-serif;
     font-size: 16px;
     width:100%;
-    height:160px;
+    height:160px; 
 }
 .child {
     display:none;
@@ -252,29 +245,13 @@
     position:relative;
 }
 .fifth {
-    background-color:rgb(176, 252, 227);
+    background-color:rgb(197, 252, 233);
     width:100%;
     height:800px;
     margin-top: 120px;
     margin-bottom: 15px;
-    display:grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
 }
 .annonce {
-    width:180px;
-    height:10px;
-    text-align: left;
-    display:flex;
-    flex-direction: column;
-    justify-content:space-between;
-    grid-row: 1/4;
-    grid-column:2/15;
-}
-.title1{
-    font-size: xx-large;
-}
-.annonce1 {
     width:200px;
     height:200px;
 
@@ -284,20 +261,35 @@
     padding-right:6px;
     padding-top: 15px;
 }
-.annonce11{
-    grid-column:12/17;
-    grid-row:0.9;
+.lay1{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    margin-top:40px;
 }
-.annonce12{
-    grid-column:12/17;
-    grid-row: 2.3;
+.lay2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    margin-top:5px;
 }
-.annonce13{
-    grid-column: 16/21;
-    grid-row:0.2;
+.total{
+    display:flex;
+    justify-content: center;
+    gap:15px;
+    margin-left: 500px;
 }
-.annonce14{
-    grid-column: 16/21;
-    grid-row: 1.6;
+.text3{
+    width:250px;
+    height:15px;
+    margin-top: 100px;
+    margin-left: 165px;
+    text-align: left;
+    display:grid;
+    grid-row: 1/3;
+    grid-column-end: 1/6;
 }
+
 
