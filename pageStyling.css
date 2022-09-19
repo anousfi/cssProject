@@ -4,6 +4,8 @@
     height:100px;
     background-color: rgb(250, 248, 246);
     margin-top: 0px;
+    display:flex;
+    justify-content: space-between;
 
 }
 .barrehautgauche{
@@ -17,9 +19,10 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    margin-right: 160px;
+    margin-right: 100px;
     width:500px;
     gap:10px;
+    text-decoration: none;
 }
 .first {
     display:flex;
@@ -62,6 +65,7 @@
     grid-template-columns: 20% 20% 20% 20% 20% ;
     grid-template-rows: 50% 50%;
     font-size:20px;
+    text-decoration: none;
     color:grey;
     row-gap: 5px;
     column-gap: 5px;
@@ -77,6 +81,7 @@
     font-size: x-large;
     font-family: Work Sans,Arial,sans-serif;
     row-gap: 10px;
+    text-decoration: none;
 }
 #doctors2{
     grid-row: 4;
@@ -84,15 +89,18 @@
     grid-column-end: 10 ;
     font-size:x-large;
     row-gap: 10px;
+    text-decoration: none;
 }
 
 .medical {
     color:#00b39b;
     font-family: Work Sans,Arial,sans-serif;
+    text-decoration: none;
 }
 .ocolor {
     color: grey;
     font-family: Work Sans,Arial,sans-serif;
+    text-decoration: none;
 }
 .second{
     display:flex;
@@ -114,6 +122,7 @@
     margin-top: 5px;
     margin-left:160px;
     margin-right:160px;
+    text-decoration: none;
 }
 .article1 {
     padding-left: 30px;
@@ -122,6 +131,7 @@
     padding-bottom: 35px;
     width:230px;
     height:300px;
+    text-decoration: none;
     border-radius: 5%;
     margin-bottom:30px;
     margin-top:85px;
@@ -162,6 +172,7 @@
     display:list-item;
     font-size: 20px;
     font-family: Work Sans,Arial,sans-serif;
+    text-decoration: none;
 }
 
 .article1:hover {
@@ -172,6 +183,7 @@
     padding-top: 20px;
     padding-right: 50px;
     padding-bottom: 35px;
+    text-decoration: none;
     width:230px;
     height:300px;
     border-radius: 5%;
@@ -191,6 +203,7 @@
     padding-top: 20px;
     padding-right: 50px;
     padding-bottom: 37px;
+    text-decoration: none;
     width:230px;
     height:300px;
     border-radius: 5%;
@@ -205,14 +218,19 @@
 .article3:hover {
     background-color: #464747;
 }
+.elmli{
+    text-decoration: none;
+}
 .career:hover{
     color:#00b39b;
+    text-decoration: none;
 }
 .department:hover .child{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
     align-items:stretch;
+    text-decoration: none;
     text-align:left;
     margin-top: 50px;
     margin-left: 0px;
@@ -228,6 +246,7 @@
 }
 .child {
     display:none;
+    text-decoration: none;
 }
 .department{
     position:relative;
