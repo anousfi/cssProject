@@ -1,0 +1,86 @@
+VAR 
+letter,sentence : STRING
+tab :ARRAY_OF STRING
+count1:=0,i:=0,j=0 :INTEGER
+BEGIN 
+Write ("write your sentence")
+Read(sentence)
+letter:=sentence(0)
+  WHILE (letter !== ".")  DO
+    i++
+    letter:=sentence(i)
+      WHILE (letter !=" ") DO 
+        tab[j]+=letter
+        ENDWHILE
+    j++
+    ENDWHILE
+Write("the number of characters is : "+i)
+Write("the number of words is : "+j)
+FOR k FROM 0 TO j-1 STEP 1 DO
+   FOR l FROM 0 TO tab[k].length-1 STEP 1 DO
+      IF   (tab[k](l)==="a" || tab[k](l)==="e" ||
+            tab[k](l)==="i"|| tab[k](l)==="u"||
+            tab[k](l)==="o" )
+            DO count1+=1
+            ENDIF
+    ENDFOR
+ ENDFOR
+Write("the number of vowels is : "+count1)
+END
+let sentence=""
+prompt(sentence="write your sentence")
+let letter=sentence.charAt(0)
+let [] arr
+let i=0
+let j=0
+arr[0]=""
+while(letter!==".") {
+i++
+letter=sentence.charAt(i)
+while (letter!==" "){
+  tab[j]+=letter
+}
+j++
+}
+console.log("the number of characters is "+i)
+console.log("the number of words is "+j)
+let count=0
+for (let k =0 ,k<j,k++) {
+  for (let l=0;l<tab[k].length-1;l++) {
+    if (tab[k](l)===a||tab[k](l)===e||tab[k](l)===u||
+    tab[k](l)===i||tab[k](l)===o) {
+      count+=1
+    }
+  }
+}
+consol.log("there's "+count+" vowels in the sentence")
+
+let sentence=prompt("write your sentence")
+console.log(sentence)
+let letter=sentence.charAt(0)
+let tab={}
+let i=0
+while(letter!==".") {
+  letter=sentence.charAt(i)
+i++;
+}
+console.log("the number of characters is "+i)
+let count1=1
+let letter1=""
+for (let j=0;j<sentence.length-1;j++) {
+letter1=sentence.charAt(j)
+if (letter1===" ") {
+  count1+=1
+}
+}
+console.log("the number of words is "+count1)
+let count=0
+for (let k =0 ;k<sentence.length-1;k++) {
+    let letter2=sentence.charAt[k]
+    if (letter2==="a"||letter2==="e"||letter2==="u"||
+    letter2==="i"||letter2==="o") {
+      count+=1
+    }
+  
+}
+console.log("there's "+count+" vowels in the sentence")
