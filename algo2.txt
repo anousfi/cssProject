@@ -1,0 +1,53 @@
+arraySolution 
+VAR tab1,tab2 :ARRAY_OF Integer;
+VAR i,j,sum=0 : Integer;
+BEGIN
+FOR i FROM 0 TO tab1.length DO
+  FOR j FROM 0 TO tab2.length DO
+  IF (tab1[i]===tab2[j]) DO sum+=tab1[i];break;
+  ENDFOR
+ENDFOR
+Write ("the sum of distinct elements is: "+sum)
+END
+BEGIN
+FOR i FROM 0 TO tab1.length DO
+  FOR j FROM 0 TO tab2.length IF (tab1[i]!==tab2[j])
+  DO sum+=tab1[i] break;
+FOR i FROM 0 TO tab2.length DO
+ FOR j FROM 0 TO tab1.length IF (tab2[i]!==tab1[j])
+  DO sum+=tab2[i] break;
+ENDFOR
+Write ("the sum of overlapping elements is: "+sum)
+END
+
+
+hashtableSolution
+
+VAR hash1,hash2: HASHTABLE_OF <Integer,Integer>;
+VAR i,sum=0,tampon :Integer;
+BEGIN
+FOR i FROM 0 TO hash1.length DO 
+ tampon:=get.hash1(i);
+ FOR j FROM 0 TO hash2.length DO
+ IF (get.hash2(j)===tampon) DO sum+=tampon break;
+ENDFOR
+Write ("the sum of overlapping elements is :"+sum)
+END
+
+BEGIN 
+FOR i FROM 0 TO hash1.length DO 
+ tampon:=get.hash1(i);
+ FOR j FROM 0 TO hash2.length DO 
+ IF (tampon!==get.hash2(j)) sum+=tampon;
+ ENDIF
+ ENDFOR
+ENDFOR
+FOR i FROM 0 TO hash2.length DO 
+ tampon:=get.hash2(i);
+ FOR j FROM 0 TO hash1.length DO 
+ IF (tampon!==get.hash1(j)) sum+=tampon;
+ ENDIF
+ ENDFOR
+ENDFOR
+Write ("the sum of distinct elements is :"+sum)
+END
